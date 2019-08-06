@@ -6,7 +6,8 @@ Coming Soon!
 
 # Example Ussage
 ```html
-<!--The bot.dml file, a requiered setup file for all users to configure to bots code with its owners and token, as well as all of the bots events.-->
+<!--The bot.dml file, a requiered setup file for all users to configure to bots code with its 
+owners and token, as well as all of the bots events.-->
 
 <settings>
     <prefix>/</prefix>>
