@@ -4,7 +4,7 @@ Discord Markup Language is a simple, yet powerful markup language to help intera
 # Installation
 Coming Soon!
 
-# Example Ussage
+# Example Usage
 ```html
 <!--The bot.dml file, a requiered setup file for all users to configure to bots code with its 
 owners and token, as well as all of the bots events.-->
