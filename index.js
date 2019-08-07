@@ -1,9 +1,11 @@
 const Discord = require('discord.js')
 const client = new Discord.Client({ disableEveryone: true })
-const simple = require('./lib/messageEmbed')
+const simple = require('./lib/commandDisplayHandler')
+const parser = require('./lib/stringParser')
 const fs = require('fs')
 const cheerio = require('cheerio')
 const chalk = require('chalk')
+const _ = require('lodash');
 
 const $ = cheerio.load(fs.readFileSync('./markup/bot.dml'))
 const commands = new Set()
@@ -23,24 +25,22 @@ client.on('message', async message => {
     if (message.channel.type == "dm") return
     if (!message.content.startsWith(botPrefix) || message.author.bot) return
 
+    console.log(message.guild.owner.user.createdAt)
+
     const args = message.content.slice(Object.keys(botPrefix).length).trim().split(/ +/g)
     const command = args.shift().toLowerCase()
     if (!commands.has(command)) return
-    const $$ = cheerio.load(fs.readFileSync(`./markup/commands/${command}.dml`))
+    const $$ = cheerio.load(parser.parse(`./markup/commands/${command}.dml`, message))
     const responseE = $$('response')
     if (responseE.length === 0) return console.log(chalk.bgWhite.red('Command Missing <response> element!'))
-    if (args.length === 0 || $$('arg').length === 0) {
-        simple.embed($$, responseE, message)
-    }
-    else{
-        $$('arg').each((i, elem)=>{
-            if(args[0] > $$('arg').length) return
-            if(args[0] === $$(elem).attr('value')){
-                if($$(`arg[value=${i+1}] > embed`).length === 0) return message.channel.send($$(elem).text())
-                else{
-                    const argE = $$(elem)
-                    simple.embed($$, argE, message)
-                }
+    if (args.length === 0 || $$('arg').length === 0) return simple.embed('response', $$, responseE, message)
+    else {
+        $$('arg').each((i, el) => {
+            if (args[0] > $$('arg').length) return
+            elem = $$(el)
+            if (args[0] === elem.attr('value')) {
+                    const argE = elem
+                    simple.embed(`arg[value=${i + 1}]`, $$, argE, message)
             }
         })
     }
@@ -48,11 +48,13 @@ client.on('message', async message => {
 
 client.on('ready', () => {
     var startupE = $('startup').first()
-    console.log('Discord Markup Language Has Launched Successfully!')
+    console.log(chalk.green('Discord Markup Language Has Launched Successfully!'))
     client.channels.get(startupE.attr('channel')).send((startupE.attr('embed') === 'true') ? new Discord.RichEmbed().setDescription(startupE.text()).setColor(startupE.attr('color')) : startupE.text())
     botPrefix = $('settings > prefix').text()
-    owner = $('settings > owner').text()
-    console.log(owner)
+    owner = $('settings > owner').text().split(',')
+    _.each(owner, (value) => {
+        console.log(`${chalk.yellow(client.users.get(value).tag)} Is A Bot Owner!`)
+    })
 })
 
 client.on('error', (err) => {

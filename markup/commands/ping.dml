@@ -1,15 +1,28 @@
 <response>
     <embed>
-        <title>I AM A TITLE!</title>
+        <title>Your id is: {{author:id}}</title>
         <author>This Is The Embeds Author</author>
         <description>__This Is The Embeds Description__</description>
-        <field title='yeet'>Field 1</field>
-        <field title='Yote'>Field 2</field>
-        <field title='yItE'>Field 3</field>
+        <field title='Your playing: {{author:presence:name}}'>Details: {{author:presence:details}}
+state: {{author:presence:state}}
+start time: {{author:presence:time:start}}
+        </field>
+        <field title='User'>Created on: {{author:createdOn}}
+Username: {{author:username}}
+isBot: {{author:isBot}}
+tagged name: {{author:tag}}
+        </field>
+        <field title='Message'>Content: {{message:content}}</field>
+        <field title='Guild'>Guild Name: {{guild:name}}
+Owner: {{guild:owner}}
+Owner Nickname: {{guild:owner:nickname}}
+Owner ID: {{guild:owner:id}}
+        </field>
         <color>#00ffc3</color>
-        <thumbnail>https://c.mql5.com/31/203/night-owl-logo-200x200-1767.png</thumbnail>
-        <footer timestamp='true' image='https://cdn.discordapp.com/avatars/516840368843522073/1040b30414894c8e427ccae7a96d3718.png?size=128'>This Is The Embeds Footer</footer>
+        <thumbnail>{{author:avatar}}</thumbnail>
+        <footer timestamp='true' image='https://cdn.discordapp.com/avatars/516840368843522073/1040b30414894c8e427ccae7a96d3718.png?size=128'>Requested By: {{author:tag}}</footer>
     </embed>
+    <console>User: {{author:id}} has used command ping</console>
 </response>
 <arg value='1'>
     <embed>
