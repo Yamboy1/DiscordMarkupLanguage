@@ -14,11 +14,11 @@ owners and token, as well as all of the bots events.-->
     <owner>583295728349462947</owner>
     <token>dehsNbNbhj638e9.hfenf.fnjENJFB_frbref.vfhehd_NBU_pfnJGJn</token>
 </settings>
-<startup> channel='462i4552035622942'embed='true color='#FFFC33'>The bot has successfully booted!</startup>
+<startup> channel='462i4552035622942'embed='true color='#FFFC33'>The bot has successfully booted with ping: {{bot:ping}}ms</startup>
 ```
 
 # Documentation
-This is the documentation for the Discord Markup Language. Listed below are all of the languages <tags>, and what they are used for. Tages should be used in this format: <tag>Information</tag>. Tags with a filled jotdot, •, means that taht tag is mandatory for the bot to run. However, tags with an empty jot dot, ◦, means that this tag is optional. A 'subtag' is a tag that goes inside two tags. It will be listed in the documentation underneith its corosponding maintag. For an example of a subtag, please see the example above of bot.dml. The 'subtags' are tags such as <prefix>, that can be found in-between the <settings> tags. Make sure that all 'subtags' are indented and down a line from the main tag. Sometimes, tags will have attributes stored inside them. For an example of these attributes, please see the example above of bot.dml. The attributes are things such as 'channel=' that you can see inside the <startup> tags. These attributes should always be a 'sting' (inside quotes), and are marked in the documentation with a triangle, ‣, underneith its corosponding <tag>.
+This is the documentation for the Discord Markup Language. Listed below are all of the languages <tags>, and what they are used for. Tages should be used in this format: <tag>Information</tag>. Tags with a filled jotdot, •, means that taht tag is mandatory for the bot to run. However, tags with an empty jot dot, ◦, means that this tag is optional. A 'subtag' is a tag that goes inside two tags. It will be listed in the documentation underneith its corosponding maintag. For an example of a subtag, please see the example above of bot.dml. The 'subtags' are tags such as <prefix>, that can be found in-between the <settings> tags. Make sure that all 'subtags' are indented and down a line from the main tag. Sometimes, tags will have attributes stored inside them. For an example of these attributes, please see the example above of bot.dml. The attributes are things such as 'channel=' that you can see inside the <startup> tags. These attributes should always be a 'sting' (inside quotes), and are marked in the documentation with a triangle, ‣, underneith its corosponding <tag>. Next, we have DML external calls. These external calls are calls to the DiscordApp API, that can help a user recive info from the Discord API. External calls look like this {{bot:ping}}. This specific example would get the ping of the bot, and display it. These can be used in any text field in any file. For an example, see the example of `bot.dml` above. You will notice under the <startup> tag, an external call is used. In this partiular example, the bot would send to the thartup channel "The bot has succesfully boted with ping: 19ms" (19ms is an example. The "19" would be hwatever your current bots connection speed is"). DML external calls can be found at the very bottom of the docs. For command files, you will need to goto path../markup/commands and add all your files there. Your command file names should be CommandName.dml. To run your code, goto The folder where you keep your DML and bot's files, you should see `index.js`. Open a terminal of choice, and use command `cd` to get to that path. Then, when youre here, run `node index.js`.
   
   
 ```•Requierd Files: bot.dml
@@ -30,7 +30,9 @@ This is the documentation for the Discord Markup Language. Listed below are all 
     ‣channel: This variable is used to store the channel ID of where you want your startup message to send
     ‣embed: This variable should be set to 'true' if you want your startup message to be embedded. Otherwise, it should be set to 'false'.
     ‣color: If your message is an embed, set this variable to a HEX color code starting with '#'. Otherwise, leave this variable blank.
+◦<require member= "User ID"> This tag is used to call a `member` object. This object can be used later with DML external calls such as {{member:tag}} that would call this users tag. File: Command File
 ◦<response> This tag is used for the bot to send a response message when a command is used. File: Command File
+    ◦<console> This tag is used to print a response to console. File: Command File
     ◦<embed> This tag can be used if you want your bots response to be an embedded message. File: Command File
         ◦<author> This tag is where the Author text of your embed should be stored. File: Command File
         ◦<description> This tag is where the Descrition text of your embed should be stored. File: Command File
@@ -38,6 +40,15 @@ This is the documentation for the Discord Markup Language. Listed below are all 
         ◦<color> This tag should be set to a HEX color ID, starting with a '#'. It will be the color of your embedded response.
         ◦<thumbnail> This tag should be an image URL that will be displayed at the embeds thumbnail image.
         ◦<footer ‣timestamp ‣image> This tag will be used to set your embeds footer. The 'timestamp' attribute is a boolean, and will be set either to 'true', or 'false'. If you want your embeds footer to incude a timestamp of when it was sent, set this attribute to 'true'. Otherwise, set it to 'false'. If you want your embeds footer to have a small image icon, then the 'image' attribute should be set to an image URL. Otherwise, don't include this attribute. NOTE: THe closing tag for this tag does NOT include the attribute. This tags format should be: <Footer timestamp='true' image='https://AnImage.png'>Footer Text</footer>.
+◦<arg value="Text> This tag is used tpo create an argument. An argument, is like another part to a command. For example, if the value is "1", and your command name is "ping.js", then when you run "!ping 1" it will run whatever is inside the argument "1". You can use as many arguments as needed in your file. All of the subtags that can be used inside the <response> tag can also be used inside the <arg> tag. NOTE: The closing tag for an argument is </arg> File: Command File.
+
+<!-- DML external calls->
+{{bot:ping}} Displays the bots current ping speed in milliseconds
+{{author.id}} Displays the user ID of whoever requested a command. File: Command File
+{{bot.id}} Displays the bot's user ID
+{{bot.createdOn}} Displays a timestamp when the bot was created
+{{bot:presence:status}} Displays the bots current Disocord presance
+{{memer:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requiers: A <require> tag, File: Command File
 ```
           
           
