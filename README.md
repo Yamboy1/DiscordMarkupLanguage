@@ -44,29 +44,30 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 
 <!-- DML external calls->
 {{bot:ping}} Displays the bots current ping speed in milliseconds
-{{author.id}} Displays the user ID of whoever requested a command.
-{{bot.id}} Displays the bot's user ID
+{{bot:avatar}} The bot's avatar
 {{bot.createdOn}} Displays a timestamp when the bot was created
+{{bot.id}} Displays the bot's user ID
 {{bot:presence:status}} Displays the bots current Disocord presance
 {{memer:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:username}} The Name wihtout the #0000 of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:avatar}} The avatar of the member that was defined in the <require> tag Requiers: A <require> tag
+{{author:username}} Displays the command authors Name without the #0000
+{{author:tag}} Displays the command authors Name#0000 tag
+{{author.id}} Displays the user ID of whoever requested a command.
+{{author:avatar}} The avatar of the command
+{{author:createdOn}} Displays when the command authors discord account was made
+{{author:isBot}} Dislays if the command author is a bot
 {{author:presence:name}} Displays the comand authors current Disocord presance name
 {{author:presence:details}} Displays the comand authors current Disocord presance details
 {{author:presence:state}} Displays the comand authors current Disocord presance details
 {{author:presence:time:start}} Displays the comand authors current Disocord presance start time
-{{author:createdOn}} Displays when the command authors discord account was made
-{{author:username}} Displays the command authors Name without the #0000
-{{author:tag}} Displays the command authors Name#0000 tag
-{{author:isBot}} Dislays if the command author is a bot
-{{message:content}} Displays the message content that triggered the command/event (For commands, the command name)
 {{guild:name}} The name of the guild the command/event was run
 {{guild:owner}} The owner of the guild the command/event was run
 {{guild:owner:nickname}} The nickname of the guild's owner the command/event was run
 {{guild:owner:id}} Thd id of the guild's owner the command/event was run
 {{guild:owner:createdOn}} When the owner of the guild the command/event was run on account was created
-{{author:avatar}} The avatar of the command
-{{bot:avatar}} The bot's avatar
+{{message:content}} Displays the message content that triggered the command/event (For commands, the command name)
+
 
           
           
