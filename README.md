@@ -43,14 +43,19 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 ◦<arg value="Text> This tag is used tpo create an argument. An argument, is like another part to a command. For example, if the value is "1", and your command name is "ping.js", then when you run "!ping 1" it will run whatever is inside the argument "1". You can use as many arguments as needed in your file. All of the subtags that can be used inside the <response> tag can also be used inside the <arg> tag. NOTE: The closing tag for an argument is </arg> File: Command File.
 
 <!-- DML external calls->
+<!--Bot Calls-->
 {{bot:ping}} Displays the bots current ping speed in milliseconds
 {{bot:avatar}} The bot's avatar
 {{bot.createdOn}} Displays a timestamp when the bot was created
 {{bot.id}} Displays the bot's user ID
 {{bot:presence:status}} Displays the bots current Disocord presance
+
+<!--Member calls>
 {{memer:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:username}} The Name wihtout the #0000 of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:avatar}} The avatar of the member that was defined in the <require> tag Requiers: A <require> tag
+
+<!--Author calls-->
 {{author:username}} Displays the command authors Name without the #0000
 {{author:tag}} Displays the command authors Name#0000 tag
 {{author.id}} Displays the user ID of whoever requested a command.
@@ -61,11 +66,15 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 {{author:presence:details}} Displays the comand authors current Disocord presance details
 {{author:presence:state}} Displays the comand authors current Disocord presance details
 {{author:presence:time:start}} Displays the comand authors current Disocord presance start time
+
+<!--Guild Calls-->
 {{guild:name}} The name of the guild the command/event was run
 {{guild:owner}} The owner of the guild the command/event was run
 {{guild:owner:nickname}} The nickname of the guild's owner the command/event was run
 {{guild:owner:id}} Thd id of the guild's owner the command/event was run
 {{guild:owner:createdOn}} When the owner of the guild the command/event was run on account was created
+
+<!--Message calls>
 {{message:content}} Displays the message content that triggered the command/event (For commands, the command name)
 
 
