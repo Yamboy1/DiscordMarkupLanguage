@@ -1,0 +1,6 @@
+<settings>
+    <prefix>/</prefix>
+    <owner>ENTER OWNER ID'S HERE. SEPERATE THEM WITH COMMAS. DO NOT USE SPACES</owner>
+    <token>ENTER BOT TOKEN HERE</token>
+</settings>
+<startup channel='STARTUP CHANNEL ID' color='#FFFC33' embed='true'>The bot has successfully booted!</startup>
