@@ -76,6 +76,7 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 
 <!--Message calls>
 {{message:content}} Displays the message content that triggered the command/event (For commands, the command name)
+```
 
 
           
