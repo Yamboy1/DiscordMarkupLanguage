@@ -14,7 +14,7 @@ owners and token, as well as all of the bots events.-->
     <owner>583295728349462947</owner>
     <token>dehsNbNbhj638e9.hfenf.fnjENJFB_frbref.vfhehd_NBU_pfnJGJn</token>
 </settings>
-<startup> channel='462i4552035622942'embed='true color='#FFFC33'>The bot has successfully booted with ping: {{bot:ping}}ms</startup>
+<startup channel='462i4552035622942'embed='true color='#FFFC33'>The bot has successfully booted with ping: {{bot:ping}}ms</startup>
 ```
 
 # Documentation
