@@ -70,7 +70,7 @@ client.on('ready', () => {
     }
     catch (e) {
         if(e.message.includes('send'))console.log(chalk.yellow.inverse(`Error sending message to startup channel. Possibly invalid channel ID?\nParser error: ${e.name + e.message}`))
-        if(e.message.includes('tag'))console.log(chalk.yellow.inverse(`Error sending message to startup channel. Possibly invalid channel ID?\nParser error: ${e.name + e.message}`))
+        if(e.message.includes('tag'))console.log(chalk.yellow.inverse(`Error sending grabbing owner usernames. Possibly invalid user ID?\nParser error: ${e.name + e.message}`))
     }
 })
 
