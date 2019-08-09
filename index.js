@@ -2,15 +2,26 @@ const Discord = require('discord.js')
 const client = new Discord.Client({ disableEveryone: true })
 const simple = require('./lib/commandDisplayHandler')
 const parser = require('./lib/stringParser')
-const fs = require('fs')
+const fs = require('fs-extra')
 const cheerio = require('cheerio')
 const chalk = require('chalk')
 const _ = require('lodash');
 
-const $ = cheerio.load(fs.readFileSync('./markup/bot.dml'))
 const commands = new Set()
 var botPrefix = null
 var owner = null
+
+if (!fs.existsSync('./markup/bot.dml')) {
+    fs.createFileSync('./markup/bot.dml')
+    fs.writeFileSync('./markup/bot.dml', fs.readFileSync('./generated/bot.txt'))
+    console.error(chalk.red('We notcied your bot.dml file was missing, so DML automatically generated it for you. Please rerun your script'))
+}
+if (!fs.existsSync('./markup/commands/')) {
+    fs.createFileSync('./markup/commands/ping.dml')
+    fs.writeFileSync('./markup/commands/ping.dml', fs.readFileSync('./generated/ping.txt'))
+    console.error(chalk.red('We noticed your commands directory was missing, so we automatically generated it along with an example ping script for you'))
+}
+const $ = cheerio.load(fs.readFileSync('./markup/bot.dml'))
 
 fs.readdir('./markup/commands/', (err, files) => {
     files.forEach(file => {
@@ -37,8 +48,8 @@ client.on('message', async message => {
             if (args[0] > $$('arg').length) return
             elem = $$(el)
             if (args[0] === elem.attr('value')) {
-                    const argE = elem
-                    simple.embed(`arg[value=${i + 1}]`, $$, argE, message)
+                const argE = elem
+                simple.embed(`arg[value=${i + 1}]`, $$, argE, message)
             }
         })
     }
@@ -46,13 +57,21 @@ client.on('message', async message => {
 
 client.on('ready', () => {
     var startupE = $('startup').first()
-    console.log(chalk.green('Discord Markup Language Has Launched Successfully!'))
-    client.channels.get(startupE.attr('channel')).send((startupE.attr('embed') === 'true') ? new Discord.RichEmbed().setDescription(startupE.text()).setColor(startupE.attr('color')) : startupE.text())
-    botPrefix = $('settings > prefix').text()
-    owner = $('settings > owner').text().split(',')
-    _.each(owner, (value) => {
-        console.log(`${chalk.yellow(client.users.get(value).tag)} Is A Bot Owner!`)
-    })
+    console.log(chalk.green.underline('Discord Markup Language Has Launched Successfully!'))
+    try {
+        if (!startupE.attr('channel')) console.log(chalk.yellow.inverse('! No startup channel set in: bot.dml !'))
+        else client.channels.get(startupE.attr('channel')).send((startupE.attr('embed') === 'true') ? new Discord.RichEmbed().setDescription(startupE.text()).setColor(startupE.attr('color')) : startupE.text())
+
+        botPrefix = $('settings > prefix').text()
+        owner = $('settings > owner').text().split(',')
+        _.each(owner, (value) => {
+            console.log(`${chalk.yellow(client.users.get(value).tag)} Is A Bot Owner!`)
+        })
+    }
+    catch (e) {
+        if(e.message.includes('send'))console.log(chalk.yellow.inverse(`Error sending message to startup channel. Possibly invalid channel ID?\nParser error: ${e.name + e.message}`))
+        if(e.message.includes('tag'))console.log(chalk.yellow.inverse(`Error sending message to startup channel. Possibly invalid channel ID?\nParser error: ${e.name + e.message}`))
+    }
 })
 
 client.on('error', (err) => {
@@ -65,4 +84,6 @@ client.on('warn', (warn) => {
 
 
 
-client.login($('settings > token').text())
+client.login($('settings > token').text()).catch(() => {
+    console.error(chalk.red(`${chalk.blue($('settings > token').text())} is an incorrect bot token!`))
+})
