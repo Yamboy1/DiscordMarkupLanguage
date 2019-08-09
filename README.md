@@ -53,9 +53,8 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 ```
 
 
-* DML external calls
-
-* Bot Calls
+* DML External Calls
+    * Bot Calls
 ```
 {{bot:ping}} Displays the bots current ping speed in milliseconds
 {{bot:avatar}} The bot's avatar
