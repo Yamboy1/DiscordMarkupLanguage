@@ -95,4 +95,4 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 ```
           
           
-<h5>This is the end of our documentation. If you find an issue, please let us know on our support server, <a href="https://discord.gg/DPqH5dW">found here</a></h5>
+# This is the end of our documentation. If you find an issue, please let us know on our support server, <a href="https://discord.gg/DPqH5dW">found here</a></h5>
