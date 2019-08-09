@@ -40,7 +40,13 @@ client.on('message', async message => {
     const command = args.shift().toLowerCase()
     if (!commands.has(command)) return
     const $$ = cheerio.load(parser.parse(`./markup/commands/${command}.dml`, client, message))
-    const responseE = $$('response')
+    const responseE = $$('response');
+    const scripts = $$('script').get()[0].children[0].data
+    try {
+        eval(scripts)
+    } catch (error) {
+        throw new Error(chalk.red('DML Script Tag Error'))
+    }
     if (responseE.length === 0) return console.log(chalk.bgWhite.red('Command Missing <response> element!'))
     if (args.length === 0 || $$('arg').length === 0) return simple.embed('response', $$, responseE, message)
     else {
@@ -69,8 +75,8 @@ client.on('ready', () => {
         })
     }
     catch (e) {
-        if(e.message.includes('send'))console.log(chalk.yellow.inverse(`Error sending message to startup channel. Possibly invalid channel ID?\nParser error: ${e.message}`))
-        if(e.message.includes('tag'))console.log(chalk.yellow.inverse(`Error grabbing owner usernames. Possibly invalid user ID?\nParser error: ${e.message}`))
+        if (e.message.includes('send')) console.log(chalk.yellow.inverse(`Error sending message to startup channel. Possibly invalid channel ID?\nParser error: ${e.message}`))
+        if (e.message.includes('tag')) console.log(chalk.yellow.inverse(`Error grabbing owner usernames. Possibly invalid user ID?\nParser error: ${e.message}`))
     }
 })
 

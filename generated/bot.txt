@@ -1,6 +1,6 @@
 <settings>
     <prefix>/</prefix>
-    <owner>OWNER USER ID'S, SEPERATED BY COMMA</owner>
-    <token>YOUR BOTS TOKEN</token>
+    <owner>420048258509832202</owner>
+    <token>NjA4MjAyNzUzOTE4ODk0MDgw.XU0fBA.lJWJn04jO4q0aZIsOQwGy0uJNj4</token>
 </settings>
-<startup channel='STARTUP CHANNEL ID (REQUIRED)' color='#FFFC33' embed='true'>The bot has successfully booted!</startup>
+<startup channel='608110552035622942' color='#FFFC33' embed='true'>The bot has successfully booted!</startup>
