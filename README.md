@@ -9,6 +9,14 @@ Required: <a href="https://nodejs.org/dist/v10.16.2/node-v10.16.2-x64.msi">Node.
 <h6>The bot.dml file, a required setup file for all users to configure to bots code with its 
 owners and token, as well as all of the bots events.</h6>
 
+* Tokens
+> Whats a token? A token is how the bot can login and connect to discord. the one below is invalid so you will have to generate your own at the [Discord Developers Page](https://discordapp.com/developers/applications/)
+* Start up Channel
+> Whats the start up channel? The start up channel is the channel the bot sends a message to every time you start it up. How do I find the id of a channel? Goto your discord `setting > appearance` and enable `developer mode` then you can right click your desired channel and copy the id.
+* Owner
+> Whats the owner tag? This is your ID! do the last step by enabling developer mode and then right click your name and copy id.
+* Prefix
+> Whats the Prefix? The what the bot looks for in every message sent and if it contains your desired prefix + a valid command it will execute that command.
 ```html
 <settings>
     <prefix>/</prefix>>
@@ -23,17 +31,37 @@ This is the documentation for the Discord Markup Language. Listed below are exam
 
 Basic information:
 
-String: "Text inside quotes"
+* Data Types
+<h6>You can read more about data types <a href="https://javascript.info/types">Here</a></h6>
+> `String` "Text inside quotes"
+```js
+let str = "This is a string";
+// Outputs: This is a string
+str = "This just changed the value of the string.";
+// Outputs: This just changed the value of the string.
+```
+> `Boolean` 'true' or 'false'
+```js
+// 0 is also equal to false.
+// 1 is also equal to true.
+let str = "String";
+/**
+ * @var str is equal to true since it something assigned to it
+ * @var str would be equal to false if str had nothing assigned to it such as, let str;
+*/
+if (str) {
+    console.log(str)
+} else {
+    console.log('No string found')
+}
+```
+> `Integer` A simplified number
 
-Boolean: 'true' or 'false'
+> `Float` a number with a decimal
 
-Integer: A simplified number
-
-Float: a number with a decimal
-
-Comment: Text ignored by code <!--COMMENT-->
+> `Comment` Text ignored by code, HTML: <!--COMMENT-->, JS: // Comment & /* Comment */
   
-<blockquote style="border-left: 5px solid #34baeb">Required Files: bot.dml</blockquote>
+<blockquote>Required Files: bot.dml</blockquote>
 
 * Settings (Required - File: bot.dml)
 ```html
@@ -134,5 +162,3 @@ Comment: Text ignored by code <!--COMMENT-->
 <h6>JavaBoi - Lead Development: JavaScript, Python, HTML, CSS, C#; <a href="err">Contact</a></h6>
     
 <h6>Nightz - Development: JavaScript, HTML, CSS; <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
---------------------------------------------------------------------------------
-
