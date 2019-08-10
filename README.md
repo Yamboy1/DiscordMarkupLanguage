@@ -6,6 +6,7 @@ Coming Soon!
 <h1>Example Ussage</h1>
 <h6>The bot.dml file, a requiered setup file for all users to configure to bots code with its 
 owners and token, as well as all of the bots events.</h6>
+
 ```html
 <settings>
     <prefix>/</prefix>>
