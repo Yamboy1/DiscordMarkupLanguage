@@ -36,7 +36,7 @@ Float: a number with a decimal
 * Settings (Required - File: bot.dml)
 ```html
 <settings> <!--This tag is where you will store the bot's config information-->
-    <prefix>The bots prefix (Only one charictar)</prefix> 
+    <prefix>The bots prefix (Only one character)</prefix> 
     <owner>The bot owner's User ID</owner>
     <token>The bots Token, or client secret</token>
 </settings>
@@ -81,13 +81,13 @@ Float: a number with a decimal
 {{bot:avatar}} The bot's avatar
 {{bot.createdOn}} Displays a timestamp when the bot was created
 {{bot.id}} Displays the bot's user ID
-{{bot:presence:status}} Displays the bots current Disocord presance
+{{bot:presence:status}} Displays the bots current Discord presence
 ```
 * Member Calls
 ```
 {{memer:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:username}} The Name wihtout the #0000 of the member that was defined in the <require> tag Requiers: A <require> tag
-{{member:avatar}} The avatar of the member that was defined in the <require> tag Requiers: A <require> tag
+{{member:avatar}} The avatar of the member that was defined in the <require> tag. Requires: A <require> tag
 ```
 * Author Calls
 ```
@@ -97,10 +97,10 @@ Float: a number with a decimal
 {{author:avatar}} The avatar of the command
 {{author:createdOn}} Displays when the command authors discord account was made
 {{author:isBot}} Dislays if the command author is a bot
-{{author:presence:name}} Displays the comand authors current Disocord presance name
-{{author:presence:details}} Displays the comand authors current Disocord presance details
-{{author:presence:state}} Displays the comand authors current Disocord presance details
-{{author:presence:time:start}} Displays the comand authors current Disocord presance start time
+{{author:presence:name}} Displays the comand authors current Discord presence name
+{{author:presence:details}} Displays the comand authors current Discord presence details
+{{author:presence:state}} Displays the comand authors current Discord presence details
+{{author:presence:time:start}} Displays the comand authors current Discord presence start time
 ```
 * Guild Calls
 ```
@@ -125,12 +125,12 @@ Float: a number with a decimal
 <h4><a href="https://github.com/revokedowl-studios">GitHub</a></h2>
 <h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
 <h4>Our team:</h4>
-<h6>Chris L. (Retr0n) - Ownership & Lead Development: JavScript, TypeScript, Python, CSS, HTML, C#; <a href="mailto:CLamers@revokedowl.xyz">Contact</a></h6>
+<h6>Chris L. (Retr0n) - Ownership & Lead Development: JavaScript, TypeScript, Python, CSS, HTML, C#; <a href="mailto:CLamers@revokedowl.xyz">Contact</a></h6>
     
 <h6>Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; <a href="mailto:hpaulson@revokedowl.xyz">Contact</a></h6>
     
 <h6>Amir N. (JavaBoi) - Lead Development: JavaScript, Python, HTML, CSS, C#; <a href="mailto:cnoble@revokedowl.xyz">Contact</a></h6>
     
-<h6>Nightz - Development: JavaSvript, HTML, CSS; <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
+<h6>Nightz - Development: JavaScript, HTML, CSS; <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
 --------------------------------------------------------------------------------
 
