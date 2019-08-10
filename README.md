@@ -56,7 +56,7 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 ```
 
 
-* DML External Calls - These are used to call information from the Discord API (FIle: Command File)
+* DML External Calls - These are used to call information from the Discord API (File: Command File)
 
 * Bot Calls
 ```
