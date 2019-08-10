@@ -126,11 +126,12 @@ Float: a number with a decimal
 <h4><a href="https://github.com/revokedowl-studios">GitHub</a></h2>
 <h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
 <h4>Our team:</h4>
-   <h6>Chris L. (Retr0n) - Ownership & Lead Development: JavScaript, TypeScript, Python, CSS, HTML, C#; e: CLamers@RevokedOwl.xyz
+<h6>Chris L. (Retr0n) - Ownership & Lead Development: JavScaript, TypeScript, Python, CSS, HTML, C#; e: CLamers@RevokedOwl.xyz</h6>
     
-    Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; e: HPaulson@RevokedOwl.xyz
+<h6>Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; e: HPaulson@RevokedOwl.xyz</h6>
     
-    Amir N. (JavaBoi) - Lead Development: JavaScript, Python, HTML, CSS, C#; e: ANoble@RevokedOwl.xyz
+<h6>Amir N. (JavaBoi) - Lead Development: JavaScript, Python, HTML, CSS, C#; e: ANoble@RevokedOwl.xyz</h6>
     
-    Nightz - Development: JavaSvript, HTML, CSS; e: Nights@RevokedOwl.xyz
-</h6>
+<h6>Nightz - Development: JavaSvript, HTML, CSS; e: Nights@RevokedOwl.xyz</h6>
+--------------------------------------------------------------------------------
+
