@@ -24,7 +24,7 @@ This is the documentation for the Discord Markup Language. Listed below are all 
   
 <blockquote style="border-left: 5px solid #34baeb">Required Files: bot.dml</blockquote>
 
-* Settings
+* Settings (Requiered tag - File: bot.dml
 ```html
 <settings> This tag is where you will store the settings config information. File: bot.dml
     <prefix>string</prefix>
