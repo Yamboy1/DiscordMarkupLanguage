@@ -34,13 +34,16 @@ Basic information:
 * Data Types
 <h6>You can read more about data types <a href="https://javascript.info/types">Here</a></h6>
 > `String` "Text inside quotes"
+
 ```js
 let str = "This is a string";
 // Outputs: This is a string
 str = "This just changed the value of the string.";
 // Outputs: This just changed the value of the string.
 ```
+
 > `Boolean` 'true' or 'false'
+
 ```js
 // 0 is also equal to false.
 // 1 is also equal to true.
@@ -55,6 +58,7 @@ if (str) {
     console.log('No string found')
 }
 ```
+
 > `Integer` A simplified number
 
 > `Float` a number with a decimal
@@ -162,3 +166,5 @@ if (str) {
 <h6>JavaBoi - Lead Development: JavaScript, Python, HTML, CSS, C#; <a href="err">Contact</a></h6>
     
 <h6>Nightz - Development: JavaScript, HTML, CSS; <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
+--------------------------------------------------------------------------------
+
