@@ -118,7 +118,7 @@ Comment: Text ignored by code <!--COMMENT-->
 ```
           
           
-<h5>This is the end of our documentation. If you find an issue, please let us know on our support server, <a href="https://discord.gg/DPqH5dW">found here</a></h5>.
+<h5>This is the end of our documentation. If you find an error, please submit a pull request! If you need further support, please <a href="https://discord.gg/DPqH5dW">Join our Discord server</a> or <a href="mailto:dml@revokedowl.xyz">Email about this project</a>.
 
 <h2>Discord Markup Language</h4>
 <h3>By: RevokedOwl Studios</h2>
