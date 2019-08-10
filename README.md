@@ -56,8 +56,9 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 ```
 
 
-* DML External Calls (FIle: Command File)
-    * Bot Calls
+* DML External Calls - These are used to call information from the Discord API (FIle: Command File)
+
+* Bot Calls
 ```
 {{bot:ping}} Displays the bots current ping speed in milliseconds
 {{bot:avatar}} The bot's avatar
@@ -65,13 +66,13 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 {{bot.id}} Displays the bot's user ID
 {{bot:presence:status}} Displays the bots current Disocord presance
 ```
-    * Member Calls
+* Member Calls
 ```
 {{memer:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:username}} The Name wihtout the #0000 of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:avatar}} The avatar of the member that was defined in the <require> tag Requiers: A <require> tag
 ```
-    * Author Calls
+* Author Calls
 ```
 {{author:username}} Displays the command authors Name without the #0000
 {{author:tag}} Displays the command authors Name#0000 tag
@@ -84,7 +85,7 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 {{author:presence:state}} Displays the comand authors current Disocord presance details
 {{author:presence:time:start}} Displays the comand authors current Disocord presance start time
 ```
-    * Guild Calls
+* Guild Calls
 ```
 {{guild:name}} The name of the guild the command/event was run
 {{guild:owner}} The owner of the guild the command/event was run
@@ -92,7 +93,7 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 {{guild:owner:id}} Thd id of the guild's owner the command/event was run
 {{guild:owner:createdOn}} When the owner of the guild the command/event was run on account was created
 ```
-    * Message Calls
+* Message Calls
 ```
 {{message:content}} Displays the message content that triggered the command/event (For commands, the command name)
 ```
