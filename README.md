@@ -30,6 +30,8 @@ Boolean: 'true' or 'false'
 Integer: A simplified number
 
 Float: a number with a decimal
+
+Comment: Text ignored by code <!--COMMENT-->
   
 <blockquote style="border-left: 5px solid #34baeb">Required Files: bot.dml</blockquote>
 
