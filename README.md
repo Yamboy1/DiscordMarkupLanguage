@@ -33,6 +33,7 @@ Basic information:
 
 * Data Types
 <h6>You can read more about data types <a href="https://javascript.info/types">Here</a></h6>
+
 > `String` "Text inside quotes"
 
 ```js
@@ -166,5 +167,3 @@ if (str) {
 <h6>JavaBoi - Lead Development: JavaScript, Python, HTML, CSS, C#; <a href="err">Contact</a></h6>
     
 <h6>Nightz - Development: JavaScript, HTML, CSS; <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
---------------------------------------------------------------------------------
-
