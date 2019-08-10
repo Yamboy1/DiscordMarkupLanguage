@@ -127,7 +127,10 @@ Float: a number with a decimal
 <h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
 <h4>Our team:</h4>
    <h6>Chris L. (Retr0n) - Ownership & Lead Development: JavScaript, TypeScript, Python, CSS, HTML, C#; e: CLamers@RevokedOwl.xyz
+    
     Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; e: HPaulson@RevokedOwl.xyz
+    
     Amir N. (JavaBoi) - Lead Development: JavaScript, Python, HTML, CSS, C#; e: ANoble@RevokedOwl.xyz
+    
     Nightz - Development: JavaSvript, HTML, CSS; e: Nights@RevokedOwl.xyz
 </h6>
