@@ -3,11 +3,11 @@
 Discord Markup Language is a simple, yet powerful markup language to help interact with the DiscordApp API with ease, and to help beginning developers create dynamic and extensive first-time bots for their servers!
 
 <h1>Installation</h1>
-Requiered: <a href="https://nodejs.org/en/">Node.Js LTS</a>
+Required: <a href="https://nodejs.org/en/">Node.Js LTS</a>
 
-Download this repository as a .zip > extract the files > open your terminal of choice > use `cd` to get to the path with DML > run `node index.js`. This will auto generate the requiered `bot.dml` file, and an example `ping.dml` command.
+Download this repository as a .zip > extract the files > open your terminal of choice > use `cd` to get to the path with DML > run `node index.js`. This will auto generate the required `bot.dml` file, and an example `ping.dml` command.
 <h1>Example Ussage</h1>
-<h6>The bot.dml file, a requiered setup file for all users to configure to bots code with its 
+<h6>The bot.dml file, a required setup file for all users to configure to bots code with its 
 owners and token, as well as all of the bots events.</h6>
 
 ```html
@@ -34,7 +34,7 @@ Float: a number with a decimal
   
 <blockquote style="border-left: 5px solid #34baeb">Required Files: bot.dml</blockquote>
 
-* Settings (Requiered - File: bot.dml)
+* Settings (Required - File: bot.dml)
 ```html
 <settings> <!--This tag is where you will store the bot's config information-->
     <prefix>The bots prefix (Only one charictar)</prefix> 
@@ -48,7 +48,7 @@ Float: a number with a decimal
 ```
 * Embed Syntax (File: Command File)
 ```html
-<require member="User ID"> <!--This tag is an odd exeption. Becouse it only uses an attribute, it has no closing tag-->
+<required member="User ID"> <!--This tag is an odd exeption. Becouse it only uses an attribute, it has no closing tag-->
 <response>  <!--This tag is how most command files should start. It is used to respond to a command-->
     <console>The console tag is used to print something to console</console>
     <embed> <!--This tag is used to make an embedded message-->
