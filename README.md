@@ -122,12 +122,12 @@ Float: a number with a decimal
 <h2>Discord Markup Language</h4>
 <h3>By: RevokedOwl Studios</h2>
 <h4><a href="http://revokedowl.xyz">Website</a></h2>
-<h4><a href="help@revokedowl.xyz">Contact</a></h2>
+<h4><a href="mailto:help@revokedowl.xyz">Contact</a></h2>
 <h4><a href="https://github.com/revokedowl-studios">GitHub</a></h2>
 <h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
-<h6>Our team:
-    
-    Chris L. (Retr0n) - Ownership & Lead Development: JavScaript, TypeScript, Python, CSS, HTML, C#
-    Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML
-    Amir N. (JavaBoi) - Lead Development: JavaScript, Python, HTML, CSS, C#
-    Nightz - Development: JavaSvript, HTML, CSS
+<h4>Our team:</h4>
+   <h6>Chris L. (Retr0n) - Ownership & Lead Development: JavScaript, TypeScript, Python, CSS, HTML, C#; e: CLamers@RevokedOwl.xyz
+    Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; e: HPaulson@RevokedOwl.xyz
+    Amir N. (JavaBoi) - Lead Development: JavaScript, Python, HTML, CSS, C#; e: ANoble@RevokedOwl.xyz
+    Nightz - Development: JavaSvript, HTML, CSS; e: Nights@RevokedOwl.xyz
+</h6>
