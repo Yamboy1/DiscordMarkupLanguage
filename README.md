@@ -6,14 +6,14 @@ Coming Soon!
 <h1>Example Ussage</h1>
 <h6>The bot.dml file, a requiered setup file for all users to configure to bots code with its 
 owners and token, as well as all of the bots events.</h6>
-<code>html
+```html
 <settings>
     <prefix>/</prefix>>
     <owner>583295728349462947</owner>
     <token>dehsNbNbhj638e9.hfenf.fnjENJFB_frbref.vfhehd_NBU_pfnJGJn</token>
 </settings>
 <startup> channel='462i4552035622942'embed='true color='#FFFC33'>The bot has successfully booted with ping: {{bot:ping}}ms</startup>
-</code>
+```
 
 # Documentation
 This is the documentation for the Discord Markup Language. Listed below are all of the languages <tags>, and what they are used for. Tages should be used in this format: <tag>Information</tag>. Tags with a filled jotdot, •, means that taht tag is mandatory for the bot to run. However, tags with an empty jot dot, ◦, means that this tag is optional. A 'subtag' is a tag that goes inside two tags. It will be listed in the documentation underneith its corosponding maintag. For an example of a subtag, please see the example above of bot.dml. The 'subtags' are tags such as <prefix>, that can be found in-between the <settings> tags. Make sure that all 'subtags' are indented and down a line from the main tag. Sometimes, tags will have attributes stored inside them. For an example of these attributes, please see the example above of bot.dml. The attributes are things such as 'channel=' that you can see inside the <startup> tags. These attributes should always be a 'sting' (inside quotes), and are marked in the documentation with a triangle, ‣, underneith its corosponding <tag>. Next, we have DML external calls. These external calls are calls to the DiscordApp API, that can help a user recive info from the Discord API. External calls look like this {{bot:ping}}. This specific example would get the ping of the bot, and display it. These can be used in any text field in any file. For an example, see the example of `bot.dml` above. You will notice under the <startup> tag, an external call is used. In this partiular example, the bot would send to the thartup channel "The bot has succesfully boted with ping: 19ms" (19ms is an example. The "19" would be hwatever your current bots connection speed is"). DML external calls can be found at the very bottom of the docs. For command files, you will need to goto path../markup/commands and add all your files there. Your command file names should be CommandName.dml. To run your code, goto The folder where you keep your DML and bot's files, you should see `index.js`. Open a terminal of choice, and use command `cd` to get to that path. Then, when youre here, run `node index.js`.
