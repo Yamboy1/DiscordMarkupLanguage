@@ -47,6 +47,7 @@ Float: a number with a decimal
 ```
 * Embed Syntax (File: Command File)
 ```html
+<require member="User ID"> <!--This tag is an odd exeption. Becouse it only uses an attribute, it has no closing tag-->
 <response>  <!--This tag is how most command files should start. It is used to respond to a command-->
     <console>The console tag is used to print something to console</console>
     <embed> <!--This tag is used to make an embedded message-->
