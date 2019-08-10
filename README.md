@@ -119,13 +119,13 @@ Float: a number with a decimal
           
 <h5>This is the end of our documentation. If you find an issue, please let us know on our support server, <a href="https://discord.gg/DPqH5dW">found here</a></h5>.
 
-<h4>Discord Markup Language</h4>
-<h2>By: RevokedOwl Studios</h2>
-<h2><a href="http://revokedowl.xyz">Website</a></h2>
-<h2><a href="help@revokedowl.xyz">Contact</a></h2>
-<h2><a href="https://github.com/revokedowl-studios">GitHub</a></h2>
-<h2><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
-<h2>Our team:
+<h2>Discord Markup Language</h4>
+<h3>By: RevokedOwl Studios</h2>
+<h4><a href="http://revokedowl.xyz">Website</a></h2>
+<h4><a href="help@revokedowl.xyz">Contact</a></h2>
+<h4><a href="https://github.com/revokedowl-studios">GitHub</a></h2>
+<h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
+<h6>Our team:
     
     Chris L. (Retr0n) - Ownership & Lead Development: JavScaript, TypeScript, Python, CSS, HTML, C#
     Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML
