@@ -127,11 +127,11 @@ Comment: Text ignored by code <!--COMMENT-->
 <h4><a href="https://github.com/revokedowl-studios">GitHub</a></h2>
 <h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
 <h4>Our team:</h4>
-<h6>Chris L. (Retr0n) - Ownership & Lead Development: JavaScript, TypeScript, Python, CSS, HTML, C#; <a href="mailto:CLamers@revokedowl.xyz">Contact</a></h6>
+<h6>Retr0n - Ownership & Lead Development: JavaScript, TypeScript, Python, CSS, HTML, C#; <a href="err">Contact</a></h6>
     
-<h6>Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; <a href="mailto:hpaulson@revokedowl.xyz">Contact</a></h6>
+<h6>RevokedCookie - Ownership & Lead Development: Python, JavaScript, HTML; <a href="err">Contact</a></h6>
     
-<h6>Amir N. (JavaBoi) - Lead Development: JavaScript, Python, HTML, CSS, C#; <a href="mailto:cnoble@revokedowl.xyz">Contact</a></h6>
+<h6>JavaBoi - Lead Development: JavaScript, Python, HTML, CSS, C#; <a href="err">Contact</a></h6>
     
 <h6>Nightz - Development: JavaScript, HTML, CSS; <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
 --------------------------------------------------------------------------------
