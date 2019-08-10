@@ -19,44 +19,59 @@ owners and token, as well as all of the bots events.</h6>
 ```
 
 # Documentation
-This is the documentation for the Discord Markup Language. Listed below are all
-  
+This is the documentation for the Discord Markup Language. Listed below are examples of all DML's tags. A tag always uses the same syntax: <tag>TEXT</tag>. The begining tag, is the tags name, and the closing tag is the tag's name with a / in front. Tags can also include attributes. An attribute is something defined using a = inside a tag. For example, <tag field='text'>TEXT</tag>. Attributes will always be a string, and will always be in the beginning tag, and never include a space between the attribute, =, and string. DML also offers External API calls, called DML external calls. These are used to call information from the Discord API. External calls are always formatted like this: {{Module:Specific}}, where the Module is what its calling from (A member, author, bot, guild, or message), and the Specific is what its calling from that module. Calls can be used in any text field. 
+
+Basic information:
+
+String: "Text inside quotes"
+
+Boolean: 'true' or 'false'
+
+Integer: A simplified number
+
+Float: a number with a decimal
   
 <blockquote style="border-left: 5px solid #34baeb">Required Files: bot.dml</blockquote>
 
-* Settings (Requiered tag - File: bot.dml)
+* Settings (Requiered - File: bot.dml)
 ```html
-<settings> This tag is where you will store the settings config information. File: bot.dml
-    <prefix>string</prefix>
-    <owner>string</owner>
-    <token>string</token>
+<settings> <!--This tag is where you will store the bot's config information-->
+    <prefix>The bots prefix (Only one charictar)</prefix> 
+    <owner>The bot owner's User ID</owner>
+    <token>The bots Token, or client secret</token>
 </settings>
 ```
-* Logging (File: Bot.dml)
+* Events (File: Bot.dml)
 ```html
-<startup channel='string' color='hex' embed='boolean'>string</startup>
+<startup channel='ChannelId'<!--The channel where you want the startup message to send--> embed='boolean'<!--If the message is an embed--> color='#HedId' <!--If embed='true', this is the color of  the embedded message-->>What the message will actually say</startup>
 ```
-* Embed Syntax (File: Command File
+* Embed Syntax (File: Command File)
 ```html
-<response> This tag is used for the bot to send a response message when a command is used. File: Command File
-    <console>string</console>
-    <embed>
-        <author>string</author>
-        <description>string</description>
-        <feild title='string'>string</fields>
-        <color>hex</color>
-        <thumbnail>url</thumbnail>
-        <footer timestamp='boolean' image='url'>string</footer>.
+<response>  <!--This tag is how most command files should start. It is used to respond to a command-->
+    <console>The console tag is used to print something to console</console>
+    <embed> <!--This tag is used to make an embedded message-->
+        <author>The author field of an embed message</author>
+        <description>The description field of an embed message</description>
+        <feild title='the title of an embed field'>The value of an embed field</fields>
+        <color>#hexID</color> <!--This tag is used to set the color of an embed message-->
+        <thumbnail>ImageUrl</thumbnail> <!--This tag is used to set the tumbnail of an embed messsage-->
+        <footer timestamp='boolean'<!--If you want your embed's footer to inclue a timestamp--> image='ImageUrl'<!--The footer icon on your embed-->>The footer field of an embed</footer>
     </embed>
 </response>
 ```
 * Arguments (FIle: Command File)
 ```html
-<arg value="Text> This tag is used tpo create an argument. An argument, is like another part to a command. For example, if the value is "1", and your command name is "ping.js", then when you run "!ping 1" it will run whatever is inside the argument "1". You can use as many arguments as needed in your file. All of the subtags that can be used inside the <response> tag can also be used inside the <arg> tag. NOTE: The closing tag for an argument is </arg> File: Command File.
+<arg value="Text>
+            
+    <response>The 'value' of the argument is what you would use to call it. So if the command was ping, and the argumnt value was 1, to call the argument would be `/ping 1`,\nIn an argument, you can use any tags and calls just as you would in the normal command, In this field, you can use things like: <response>, <embed>, <console>, etc.</response>
+            
+</arg>            
+            
 ```
 
 
-* DML External Calls - These are used to call information from the Discord API. They can be used in any text field. 
+* DML External Calls - These are used to call information from the Discord API. They can be used in any text field.
+
 (File: Any)
 
 * Bot Calls
