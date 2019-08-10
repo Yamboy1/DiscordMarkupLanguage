@@ -128,10 +128,10 @@ Float: a number with a decimal
 <h4>Our team:</h4>
 <h6>Chris L. (Retr0n) - Ownership & Lead Development: JavScaript, TypeScript, Python, CSS, HTML, C#; <a href="mailto:CLamers@revokedowl.xyz">Contact</a></h6>
     
-<h6>Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; e: <a href="mailto:hpaulson@revokedowl.xyz">Contact</a>z</h6>
+<h6>Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; <a href="mailto:hpaulson@revokedowl.xyz">Contact</a>z</h6>
     
-<h6>Amir N. (JavaBoi) - Lead Development: JavaScript, Python, HTML, CSS, C#; e: <a href="mailto:cnoble@revokedowl.xyz">Contact</a></h6>
+<h6>Amir N. (JavaBoi) - Lead Development: JavaScript, Python, HTML, CSS, C#; <a href="mailto:cnoble@revokedowl.xyz">Contact</a></h6>
     
-<h6>Nightz - Development: JavaSvript, HTML, CSS; e: <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
+<h6>Nightz - Development: JavaSvript, HTML, CSS; <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
 --------------------------------------------------------------------------------
 
