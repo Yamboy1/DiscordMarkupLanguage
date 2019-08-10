@@ -24,7 +24,7 @@ This is the documentation for the Discord Markup Language. Listed below are all 
   
 <blockquote style="border-left: 5px solid #34baeb">Required Files: bot.dml</blockquote>
 
-* Settings (Requiered tag - File: bot.dml
+* Settings (Requiered tag - File: bot.dml)
 ```html
 <settings> This tag is where you will store the settings config information. File: bot.dml
     <prefix>string</prefix>
@@ -32,11 +32,11 @@ This is the documentation for the Discord Markup Language. Listed below are all 
     <token>string</token>
 </settings>
 ```
-* Logging
+* Logging (File: Bot.dml)
 ```html
 <startup channel='string' color='hex' embed='boolean'>string</startup>
 ```
-* Embed Syntax
+* Embed Syntax (File: Command File
 ```html
 <response> This tag is used for the bot to send a response message when a command is used. File: Command File
     <console>string</console>
@@ -50,13 +50,13 @@ This is the documentation for the Discord Markup Language. Listed below are all 
     </embed>
 </response>
 ```
-* Arguments
+* Arguments (FIle: Command File)
 ```html
 <arg value="Text> This tag is used tpo create an argument. An argument, is like another part to a command. For example, if the value is "1", and your command name is "ping.js", then when you run "!ping 1" it will run whatever is inside the argument "1". You can use as many arguments as needed in your file. All of the subtags that can be used inside the <response> tag can also be used inside the <arg> tag. NOTE: The closing tag for an argument is </arg> File: Command File.
 ```
 
 
-* DML External Calls
+* DML External Calls (FIle: Command File)
     * Bot Calls
 ```
 {{bot:ping}} Displays the bots current ping speed in milliseconds
@@ -65,13 +65,13 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 {{bot.id}} Displays the bot's user ID
 {{bot:presence:status}} Displays the bots current Disocord presance
 ```
-* Member Calls
+    * Member Calls
 ```
 {{memer:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:username}} The Name wihtout the #0000 of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:avatar}} The avatar of the member that was defined in the <require> tag Requiers: A <require> tag
 ```
-* Author Calls
+    * Author Calls
 ```
 {{author:username}} Displays the command authors Name without the #0000
 {{author:tag}} Displays the command authors Name#0000 tag
@@ -84,7 +84,7 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 {{author:presence:state}} Displays the comand authors current Disocord presance details
 {{author:presence:time:start}} Displays the comand authors current Disocord presance start time
 ```
-* Guild Calls
+    * Guild Calls
 ```
 {{guild:name}} The name of the guild the command/event was run
 {{guild:owner}} The owner of the guild the command/event was run
@@ -92,7 +92,7 @@ This is the documentation for the Discord Markup Language. Listed below are all 
 {{guild:owner:id}} Thd id of the guild's owner the command/event was run
 {{guild:owner:createdOn}} When the owner of the guild the command/event was run on account was created
 ```
-* Message Calls
+    * Message Calls
 ```
 {{message:content}} Displays the message content that triggered the command/event (For commands, the command name)
 ```
