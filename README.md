@@ -2,7 +2,8 @@
 Discord Markup Language is a simple, yet powerful markup language to help interact with the DiscordApp API with ease, and to help beginning developers create dynamic and extensive first-time bots for their servers!
 
 <h1>Installation</h1>
-Coming Soon!
+Requiered: [Node.Js LTS](https://nodejs.org/en/)
+Download this repository as a .zip, extract the files, open your terminal of choice, use `cd` to get to the path with DML, run `node.js`
 <h1>Example Ussage</h1>
 <h6>The bot.dml file, a requiered setup file for all users to configure to bots code with its 
 owners and token, as well as all of the bots events.</h6>
