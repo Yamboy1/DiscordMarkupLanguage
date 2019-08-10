@@ -125,7 +125,7 @@ Float: a number with a decimal
 <h4><a href="https://github.com/revokedowl-studios">GitHub</a></h2>
 <h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
 <h4>Our team:</h4>
-<h6>Chris L. (Retr0n) - Ownership & Lead Development: JavScaript, TypeScript, Python, CSS, HTML, C#; <a href="mailto:CLamers@revokedowl.xyz">Contact</a></h6>
+<h6>Chris L. (Retr0n) - Ownership & Lead Development: JavScript, TypeScript, Python, CSS, HTML, C#; <a href="mailto:CLamers@revokedowl.xyz">Contact</a></h6>
     
 <h6>Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; <a href="mailto:hpaulson@revokedowl.xyz">Contact</a></h6>
     
