@@ -164,6 +164,6 @@ if (str) {
     
 <h6>Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; <a href="mailto:HPaulsoN@RevokedOwl.xyz">Contact</a></h6>
     
-<h6>JavaBoi - Lead Development: JavaScript, Python, C#; <a href="mailto:anoble@revokedowl.xyz">Contact</a></h6>
+<h6>JavaBoi - Lead Development: JavaScript, Python, C#, Java; <a href="mailto:anoble@revokedowl.xyz">Contact</a></h6>
     
 <h6>Nightz - Development: JavaScript, HTML, CSS; <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
