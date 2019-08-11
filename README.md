@@ -45,27 +45,21 @@ Basic information:
 <tag Boolean='true'>
 ```
 
-
-```hmtl
-// 0 is also equal to false.
-// 1 is also equal to true.
-let str = "String";
-/**
- * @var str is equal to true since it something assigned to it
- * @var str would be equal to false if str had nothing assigned to it such as, let str;
-*/
-if (str) {
-    console.log(str)
-} else {
-    console.log('No string found')
-}
 ```
 
 > `Integer` A simplified number
+```html
+<tag Integer=1>```
 
 > `Float` a number with a decimal
+```html
+<tag Float=1.123
+```
 
-> `Comment` Text ignored by code, HTML: <!--COMMENT-->, JS: // Comment & /* Comment */
+> `Comment` Text ignored by code: <!--This is a code
+```html
+<!--This is a commant-->
+```
   
 <blockquote>Required Files: bot.dml</blockquote>
 
