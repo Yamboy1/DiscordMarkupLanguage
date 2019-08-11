@@ -160,10 +160,10 @@ if (str) {
 <h4><a href="https://github.com/revokedowl-studios">GitHub</a></h2>
 <h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
 <h4>Our team:</h4>
-<h6>Retr0n - Ownership & Lead Development: JavaScript, TypeScript, Python, CSS, HTML, C#; <a href="err">Contact</a></h6>
+<h6>Retr0n - Ownership & Lead Development: JavaScript, TypeScript, Python, CSS, HTML, C#; <a href="mailto:clamera@revokedowl.xyz">Contact</a></h6>
     
-<h6>RevokedCookie - Ownership & Lead Development: Python, JavaScript, HTML; <a href="err">Contact</a></h6>
+<h6>Hunter P. (RevokedCookie) - Ownership & Lead Development: Python, JavaScript, HTML; <a href="mailto:HPaulsoN@RevokedOwl.xyz">Contact</a></h6>
     
-<h6>JavaBoi - Lead Development: JavaScript, Python, HTML, CSS, C#; <a href="err">Contact</a></h6>
+<h6>JavaBoi - Lead Development: JavaScript, Python, HTML, CSS, C#; <a href="mailto:anoble@revokedowl.xyz">Contact</a></h6>
     
 <h6>Nightz - Development: JavaScript, HTML, CSS; <a href="mailto:nightz@revokedowl.xyz">Contact</a></h6>
