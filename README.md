@@ -31,35 +31,17 @@ This is the documentation for the Discord Markup Language. Listed below are exam
 
 Basic information:
 
-* Data Types
-<h6>You can read more about data types <a href="https://javascript.info/types">Here</a></h6>
+Basic information:
 
-> `String` "Text inside quotes"
+String: "Text inside quotes"
 
-```html
-<tag srting="This is a string">
-```
+Boolean: 'true' or 'false'
 
-> `Boolean` 'true' or 'false'
-```html
-<tag Boolean='true'>
-```
+Integer: A simplified number
 
-```
+Float: a number with a decimal
 
-> `Integer` A simplified number
-```html
-<tag Integer=1>```
-
-> `Float` a number with a decimal
-```html
-<tag Float=1.123
-```
-
-> `Comment` Text ignored by code: <!--This is a code
-```html
-<!--This is a commant-->
-```
+Comment: Text ignored by code
   
 <blockquote>Required Files: bot.dml</blockquote>
 
