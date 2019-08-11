@@ -36,16 +36,17 @@ Basic information:
 
 > `String` "Text inside quotes"
 
-```js
-let str = "This is a string";
-// Outputs: This is a string
-str = "This just changed the value of the string.";
-// Outputs: This just changed the value of the string.
+```html
+<tag srting="This is a string">
 ```
 
 > `Boolean` 'true' or 'false'
+```html
+<tag Boolean='true'>
+```
 
-```js
+
+```hmtl
 // 0 is also equal to false.
 // 1 is also equal to true.
 let str = "String";
