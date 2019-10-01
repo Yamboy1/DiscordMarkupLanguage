@@ -1,5 +1,5 @@
 # Discord Markup Language
-<h4>By: RevokedOwl Studios<h4>
+<h4>By: SeismicCore<h4>
 Discord Markup Language is a simple, yet powerful markup language to help interact with the DiscordApp API with ease, and to help beginning developers create dynamic and extensive first-time bots for their servers!
 <h1>Installation</h1>
 Required: <a href="https://nodejs.org/dist/v10.16.2/node-v10.16.2-x64.msi">Node.Js LTS</a>
@@ -131,16 +131,12 @@ Comment: Text ignored by code
 <h5>This is the end of our documentation. If you find an error, please submit a pull request! If you need further support, please <a href="https://discord.gg/DPqH5dW">Join our Discord server</a> or <a href="mailto:dml@revokedowl.xyz">Email about this project</a>.
 
 <h2>Discord Markup Language</h4>
-<h3>By: RevokedOwl Studios</h2>
-<h4><a href="http://revokedowl.xyz">Website</a></h2>
-<h4><a href="mailto:help@revokedowl.xyz">Contact</a></h2>
-<h4><a href="https://github.com/revokedowl-studios">GitHub</a></h2>
+<h3>By: SeismicCore</h2>
+<h4><a href="https://smc.wtf">Website</a></h2>
+<h4><a href="mailto:help@smc.wtf">Contact</a></h2>
+<h4><a href="https://github.com/seismiccore">GitHub</a></h2>
 <h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
 <h4>Our team:</h4>
-<h6>Retr0n - Ownership & Development: JavaScript, TypeScript, Python, CSS, HTML, C#; <a href="mailto:chris@revokedowl.xyz">Contact</a></h6>
+<h6>Chris J. - Ownership & Development: HTML, CSS, BootStrap, Javascript, Node.js; <a href="mailto:cjones@smc.wtf">Contact</a></h6>
     
-<h6>Hunter P. (RevokedCookie) - Ownership & Development: Python, JavaScript, HTML; <a href="mailto:Hunter@RevokedOwl.xyz">Contact</a></h6>
-    
-<h6>JavaBoi - Development: JavaScript, Python, C#, Java; <a href="mailto:amir@revokedowl.xyz">Contact</a></h6>
-    
-<h6>Nightz - Development: JavaScript, HTML, CSS; <a href="mailto:caleb@revokedowl.xyz">Contact</a></h6>
+<h6>Hunter P. (RevokedCookie) - Ownership & Development: Python, JavaScript, HTML, Node.js; <a href="mailto:hpaulson@smc.wtf">Contact</a></h6>
