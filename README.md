@@ -137,6 +137,6 @@ Comment: Text ignored by code
 <h4><a href="https://github.com/seismiccore">GitHub</a></h2>
 <h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
 <h4>Our team:</h4>
-<h6>Chris J. - Ownership & Development: HTML, CSS, BootStrap, Javascript, Node.js; <a href="mailto:cjones@smc.wtf">Contact</a></h6>
+<h6>Chris J. (DivineOpinion) - Ownership & Development: HTML, CSS, BootStrap, Javascript, Node.js; <a href="mailto:cjones@smc.wtf">Contact</a></h6>
     
 <h6>Hunter P. (RevokedCookie) - Ownership & Development: Python, JavaScript, HTML, Node.js; <a href="mailto:hpaulson@smc.wtf">Contact</a></h6>
