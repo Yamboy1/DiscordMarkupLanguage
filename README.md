@@ -1,22 +1,29 @@
 # Discord Markup Language
-<h4>By: SeismicCore<h4>
-Discord Markup Language is a simple, yet powerful markup language to help interact with the DiscordApp API with ease, and to help beginning developers create dynamic and extensive first-time bots for their servers!
-<h1>Installation</h1>
-Required: <a href="https://nodejs.org/dist/v10.16.2/node-v10.16.2-x64.msi">Node.Js LTS</a>
+**By: SeismicCore**
 
-<a href="https://github.com/revokedowl-studios/DiscordMarkupLanguage/archive/master.zip">Download this repootory as a .zip</a> > extract the files > open your terminal of choice > use `cd` to get to the path with DML > run `node index.js`. This will auto generate the required `bot.dml` file, and an example `ping.dml` command.
-<h1>Example Ussage</h1>
-<h6>The bot.dml file, a required setup file for all users to configure to bots code with its 
-owners and token, as well as all of the bots events.</h6>
+**Discord Markup Language is a simple, yet powerful markup language to help interact with the DiscordApp API with ease, and to help beginning developers create dynamic and extensive first-time bots for their servers!**
+
+# Installation
+Required: [Node.js v10 LTS](https://nodejs.org/en/download/) or Higher
+
+[Download this repository as a .zip](https://github.com/revokedowl-studios/DiscordMarkupLanguage/archive/master.zip) > extract the files > open your terminal of choice > use `cd` to get to the path with DML > run `node index.js`. This will auto generate the required `bot.dml` file, and an example `ping.dml` command.
+
+# Example usage
+
+**You need to setup the bot.dml file, a required setup file for all users to configure to bots code with its owners and token, as well as all of the bots events.**
 
 * Tokens
 > Whats a token? A token is how the bot can login and connect to discord. the one below is invalid so you will have to generate your own at the [Discord Developers Page](https://discordapp.com/developers/applications/)
+
 * Start up Channel
 > Whats the start up channel? The start up channel is the channel the bot sends a message to every time you start it up. How do I find the id of a channel? Goto your discord `setting > appearance` and enable `developer mode` then you can right click your desired channel and copy the id.
+
 * Owner
 > Whats the owner tag? This is your ID! do the last step by enabling developer mode and then right click your name and copy id.
+
 * Prefix
 > Whats the Prefix? The what the bot looks for in every message sent and if it contains your desired prefix + a valid command it will execute that command.
+
 ```html
 <settings>
     <prefix>/</prefix>>
@@ -53,10 +60,12 @@ Comment: Text ignored by code
     <token>The bots Token, or client secret</token>
 </settings>
 ```
+
 * Events (File: Bot.dml)
 ```html
 <startup channel='ChannelId'<!--The channel where you want the startup message to send--> embed='boolean'<!--If the message is an embed--> color='#HedId' <!--If embed='true', this is the color of  the embedded message-->>What the message will actually say</startup>
 ```
+
 * Embed Syntax (File: Command File)
 ```html
 <required member="User ID"> <!--This tag is an odd exeption. Becouse it only uses an attribute, it has no closing tag-->
@@ -72,6 +81,7 @@ Comment: Text ignored by code
     </embed>
 </response>
 ```
+
 * Arguments (FIle: Command File)
 ```html
 <arg value="Text>
@@ -95,12 +105,14 @@ Comment: Text ignored by code
 {{bot.id}} Displays the bot's user ID
 {{bot:presence:status}} Displays the bots current Discord presence
 ```
+
 * Member Calls
 ```
 {{memer:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:username}} The Name wihtout the #0000 of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:avatar}} The avatar of the member that was defined in the <require> tag. Requires: A <require> tag
 ```
+
 * Author Calls
 ```
 {{author:username}} Displays the command authors Name without the #0000
@@ -114,6 +126,7 @@ Comment: Text ignored by code
 {{author:presence:state}} Displays the comand authors current Discord presence details
 {{author:presence:time:start}} Displays the comand authors current Discord presence start time
 ```
+
 * Guild Calls
 ```
 {{guild:name}} The name of the guild the command/event was run
@@ -122,21 +135,23 @@ Comment: Text ignored by code
 {{guild:owner:id}} Thd id of the guild's owner the command/event was run
 {{guild:owner:createdOn}} When the owner of the guild the command/event was run on account was created
 ```
+
 * Message Calls
 ```
 {{message:content}} Displays the message content that triggered the command/event (For commands, the command name)
 ```
-          
-          
-<h5>This is the end of our documentation. If you find an error, please submit a pull request! If you need further support, please <a href="https://discord.gg/DPqH5dW">Join our Discord server</a> or <a href="mailto:dml@revokedowl.xyz">Email about this project</a>.
 
-<h2>Discord Markup Language</h4>
-<h3>By: SeismicCore</h2>
-<h4><a href="https://smc.wtf">Website</a></h2>
-<h4><a href="mailto:help@smc.wtf">Contact</a></h2>
-<h4><a href="https://github.com/seismiccore">GitHub</a></h2>
-<h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
-<h4>Our team:</h4>
-<h6>Chris J. (DivineOpinion) - Ownership & Development: HTML, CSS, BootStrap, Javascript, Node.js; <a href="mailto:cjones@smc.wtf">Contact</a></h6>
-    
-<h6>Hunter P. (RevokedCookie) - Ownership & Development: Python, JavaScript, HTML, Node.js; <a href="mailto:hpaulson@smc.wtf">Contact</a></h6>
+##### This is the end of our documentation. If you find an error, please submit a pull request! If you need further support, please [Join our Discord server](https://discord.gg/DPqH5dW) or [Email about this project](mailto:dml@revokedowl.xyz).
+
+## Discord Markup Language
+
+### By: SeismicCore
+
+#### [Website](https://smc.wtf)
+#### [Contact](mailto:help@smc.wtf)
+#### [Github](https://github.com/seismiccore)
+#### [Discord](https://discord.gg/DPqH5dW)
+
+#### Our team:
+###### Chris J. (DivineOpinion) - Ownership & Development: HTML, CSS, BootStrap, Javascript, Node.js; [Contact](mailto:cjones@smc.wtf)
+###### Hunter P. (RevokedCookie) - Ownership & Development: Python, JavaScript, HTML, Node.js; [Contact](mailto:hpaulson@smc.wtf)
