@@ -130,12 +130,12 @@ Comment: Text ignored by code
           
 <h5>This is the end of our documentation. If you find an error, please submit a pull request! If you need further support, please <a href="https://discord.gg/DPqH5dW">Join our Discord server</a> or <a href="mailto:dml@revokedowl.xyz">Email about this project</a>.
 
-<h2>Discord Markup Language</h4>
-<h3>By: SeismicCore</h2>
-<h4><a href="https://smc.wtf">Website</a></h2>
-<h4><a href="mailto:help@smc.wtf">Contact</a></h2>
-<h4><a href="https://github.com/seismiccore">GitHub</a></h2>
-<h4><a href="https://discord.gg/DPqH5dW">Discord</a></h2>
+<h2>Discord Markup Language</h2>
+<h3>By: SeismicCore</h3>
+<h4><a href="https://smc.wtf">Website</a></h4>
+<h4><a href="mailto:help@smc.wtf">Contact</a></42>
+<h4><a href="https://github.com/seismiccore">GitHub</a></h24
+<h4><a href="https://discord.gg/DPqH5dW">Discord</a></h4>
 <h4>Our team:</h4>
 <h6>Chris J. (DivineOpinion) - Ownership & Development: HTML, CSS, BootStrap, Javascript, Node.js; <a href="mailto:cjones@smc.wtf">Contact</a></h6>
     
