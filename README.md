@@ -82,7 +82,7 @@ Comment: Text ignored by code
 </response>
 ```
 
-* Arguments (FIle: Command File)
+* Arguments (File: Command File)
 ```html
 <arg value="Text>
             
