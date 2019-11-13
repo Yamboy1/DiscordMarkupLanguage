@@ -139,6 +139,7 @@ Comment: Text ignored by code
 * Message Calls
 ```
 {{message:content}} Displays the message content that triggered the command/event (For commands, the command name)
+```
 
 ##### This is the end of our documentation. If you find an error, please submit a pull request! If you need further support, please [Join our Discord server](https://discord.gg/DPqH5dW) or [Email about this project](mailto:dml@revokedowl.xyz).
 
