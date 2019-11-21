@@ -31,8 +31,6 @@ This is the documentation for the Discord Markup Language. Listed below are exam
 
 Basic information:
 
-Basic information:
-
 String: "Text inside quotes"
 
 Boolean: 'true' or 'false'
