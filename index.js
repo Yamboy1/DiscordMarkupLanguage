@@ -8,8 +8,8 @@ const chalk = require('chalk')
 const _ = require('lodash');
 
 const commands = new Set()
-var botPrefix = null
-var owner = null
+let botPrefix = null
+let owner = null
 
 if (!fs.existsSync('./markup/bot.dml')) {
     fs.createFileSync('./markup/bot.dml')
@@ -62,7 +62,7 @@ client.on('message', async message => {
 })
 
 client.on('ready', () => {
-    var startupE = $('startup').first()
+    let startupE = $('startup').first()
     console.log(chalk.green.underline('Discord Markup Language Has Launched Successfully!'))
     try {
         if (!startupE.attr('channel')) console.log(chalk.yellow.inverse('! No startup channel set in: bot.dml !'))
