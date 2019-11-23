@@ -41,7 +41,7 @@ client.on('message', async message => {
     if (!commands.has(command)) return
     const $$ = cheerio.load(parser.parse(`./markup/commands/${command}.dml`, client, message))
     const responseE = $$('response');
-    if ($$('script').get()[0].children[0].data != undefined) const scripts = $$('script').get()[0].children[0].data
+    const scripts = $$('script').get()[0].children[0].data
     try {
         eval(scripts)
     } catch (error) {
