@@ -91,6 +91,14 @@ Comment: Text ignored by code
             
 ```
 
+* Scripts (File: Command File)
+```html
+<script>
+    console.log('The <script> tag lets you use javascript inside DML to do things not yet supported by the language!')  
+    // You can use the Discord API by using the discord.js syntax. Docs found [here](https://discord.js.org/#/docs/main/stable/general/welcome)
+</script>
+            
+```
 
 * DML External Calls - These are used to call information from the Discord API. They can be used in any text field.
 
