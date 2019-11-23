@@ -95,7 +95,7 @@ Comment: Text ignored by code
 ```html
 <script>
     console.log('The <script> tag lets you use javascript inside DML to do things not yet supported by the language!')  
-    // You can use the Discord API by using the discord.js syntax. Docs found [HERE](https://discord.js.org/#/docs/main/stable/general/welcome/).
+    console.log('You can use the Discord API by using the discord.js syntax. Docs found [HERE](https://discord.js.org/#/docs/main/stable/general/welcome/).')
 </script>
             
 ```
