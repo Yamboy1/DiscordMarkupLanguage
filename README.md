@@ -99,7 +99,7 @@ Comment: Text ignored by code
 </script>
             
 ```
-# You can use the Discord API by using the discord.js syntax. Docs found [HERE](https://discord.js.org/#/docs/main/stable/general/welcome/)
+> You can use the Discord API by using the discord.js syntax. Docs found [HERE](https://discord.js.org/#/docs/main/stable/general/welcome/)
 * DML External Calls - These are used to call information from the Discord API. They can be used in any text field.
 
 (File: Any)
