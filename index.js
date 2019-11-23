@@ -41,12 +41,13 @@ client.on('message', async message => {
     if (!commands.has(command)) return
     const $$ = cheerio.load(parser.parse(`./markup/commands/${command}.dml`, client, message))
     const responseE = $$('response');
-    const scripts = $$('script').get()[0].children[0].data
+    if ($$('script').get()[0] != undefined) {
+        const scripts = $$('script').get()[0].children[0].data
     try {
         eval(scripts)
     } catch (error) {
         throw new Error(chalk.red('DML Script Tag Error'))
-    }
+    }}
     if (responseE.length === 0) return console.log(chalk.bgWhite.red('Command Missing <response> element!'))
     if (args.length === 0 || $$('arg').length === 0) return simple.embed('response', $$, responseE, message)
     else {
