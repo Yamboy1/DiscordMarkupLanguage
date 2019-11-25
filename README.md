@@ -63,7 +63,7 @@ Comment: Text ignored by code
 ```html
 <startup channel='ChannelId' embed='boolean' color='#HexId'>What the message will actually say</startup>
 <!-- 'ChannelId': The channel where you want the startup message to send, should be a string-->
-<!-- embed: Weather the message is embedded or not, should be a boolean
+<!-- embed: Weather the message is embedded or not, should be a boolean -->
 <!-- color: If the message is an embed, this will be the color of the embed. Should be a valid HEX code in a string.
 ```
 
