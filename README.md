@@ -61,10 +61,7 @@ Comment: Text ignored by code
 * Events (File: Bot.dml)
 
 ```html
-<startup channel='ChannelId' <!--The channel where you want the startup message to send--> embed='boolean'<!--If the message
-is an embed or not--> color='#HedId' <!--If embed='true
-', this is the color of  the embedded message--> What the message
-will actually say</startup>
+<startup channel='ChannelId' <<!--The channel where you want the startup message to send--> embed='boolean' <!--If the message is an embed or not--> color='#HedId' <!--If embed='true', this is the color of  the embedded message--> What the message will actually say</startup>
 ```
 
 * Embed Syntax (File: Command File)
