@@ -61,7 +61,10 @@ Comment: Text ignored by code
 * Events (File: Bot.dml)
 
 ```html
-<startup channel='ChannelId' <<!--The channel where you want the startup message to send--> embed='boolean' <!--If the message is an embed or not--> color='#HedId' <!--If embed='true', this is the color of  the embedded message--> What the message will actually say</startup>
+<startup channel='ChannelId' embed='boolean' color='#HexId'>What the message will actually say</startup>
+<!-- 'ChannelId': The channel where you want the startup message to send, should be a string-->
+<!-- embed: Weather the message is embedded or not, should be a boolean
+<!-- color: If the message is an embed, this will be the color of the embed. Should be a valid HEX code in a string.
 ```
 
 * Embed Syntax (File: Command File)
@@ -83,7 +86,7 @@ Comment: Text ignored by code
 * Arguments (File: Command File)
 
 ```html
-<arg value="Text>
+<arg value="Text">
 <response>The 'value' of the argument is what you would use to call it. So if the command was ping, and the argumnt value was 1, to call the argument would be `/ping 1`,\nIn an argument, you can use any tags and calls just as you would in the normal command, In this field, you can use things like: <response>, <embed>, <console>, etc.</response>        
 </arg>                  
 ```
