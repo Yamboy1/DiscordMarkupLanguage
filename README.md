@@ -21,6 +21,7 @@ Required: [Node.js v10 LTS](https://nodejs.org/en/download/) or Higher
 > Whats the owner tag? This is your ID! do the last step by enabling developer mode and then right click your name and copy id.
 * Prefix
 > Whats the Prefix? The what the bot looks for in every message sent and if it contains your desired prefix + a valid command it will execute that command.
+
 ```html
 <settings>
     <prefix>/</prefix>>
@@ -48,6 +49,7 @@ Comment: Text ignored by code
 <blockquote>Required Files: bot.dml</blockquote>
 
 * Settings (Required - File: bot.dml)
+
 ```html
 <settings> <!--This tag is where you will store the bot's config information-->
     <prefix>The bots prefix (Only one character)</prefix> 
@@ -57,6 +59,7 @@ Comment: Text ignored by code
 ```
 
 * Events (File: Bot.dml)
+
 ```html
 <startup channel='ChannelId'<!--The channel where you want the startup message to send--> embed='boolean'<!--If the message is an embed--> color='#HedId' <!--If embed='true', this is the color of  the embedded message-->>What the message will actually say</startup>
 ```
@@ -76,19 +79,18 @@ Comment: Text ignored by code
     </embed>
 </response>
 ```
+
 * Arguments (File: Command File)
+
 ```html
 <arg value="Text>
-            
-    <response>The 'value' of the argument is what you would use to call it. So if the command was ping, and the argumnt value was 1, to call the argument would be `/ping 1`,\nIn an argument, you can use any tags and calls just as you would in the normal command, In this field, you can use things like: <response>, <embed>, <console>, etc.</response>
-            
-</arg>            
-            
+<response>The 'value' of the argument is what you would use to call it. So if the command was ping, and the argumnt value was 1, to call the argument would be `/ping 1`,\nIn an argument, you can use any tags and calls just as you would in the normal command, In this field, you can use things like: <response>, <embed>, <console>, etc.</response>        
+</arg>                  
 ```
 * DML External Calls - These are used to call information from the Discord API. They can be used in any text field.
 (File: Any)
 * Bot Calls
-```
+```html
 {{bot:ping}} Displays the bots current ping speed in milliseconds
 {{bot:avatar}} The bot's avatar
 {{bot.createdOn}} Displays a timestamp when the bot was created
@@ -96,13 +98,13 @@ Comment: Text ignored by code
 {{bot:presence:status}} Displays the bots current Discord presence
 ```
 * Member Calls
-```
+```html
 {{memer:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:username}} The Name wihtout the #0000 of the member that was defined in the <require> tag Requiers: A <require> tag
 {{member:avatar}} The avatar of the member that was defined in the <require> tag. Requires: A <require> tag
 ```
 * Author Calls
-```
+```html
 {{author:username}} Displays the command authors Name without the #0000
 {{author:tag}} Displays the command authors Name#0000 tag
 {{author.id}} Displays the user ID of whoever requested a command.
@@ -115,7 +117,7 @@ Comment: Text ignored by code
 {{author:presence:time:start}} Displays the comand authors current Discord presence start time
 ```
 * Guild Calls
-```
+```html
 {{guild:name}} The name of the guild the command/event was run
 {{guild:owner}} The owner of the guild the command/event was run
 {{guild:owner:nickname}} The nickname of the guild's owner the command/event was run
@@ -123,7 +125,7 @@ Comment: Text ignored by code
 {{guild:owner:createdOn}} When the owner of the guild the command/event was run on account was created
 ```
 * Message Calls
-```
+```html
 {{message:content}} Displays the message content that triggered the command/event (For commands, the command name)
 ```
 ##### This is the end of our documentation. If you find an error, please submit a pull request! If you need further support, please [Join our Discord server](https://discord.gg/DPqH5dW) or [Email about this project](mailto:dml@revokedowl.xyz).
