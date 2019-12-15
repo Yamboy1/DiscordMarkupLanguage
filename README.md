@@ -27,6 +27,7 @@ Required: [Node.js v10 LTS](https://nodejs.org/en/download/) or Higher
     <prefix>/</prefix>>
     <owner>583295728349462947</owner>
     <token>dehsNbNbhj638e9.hfenf.fnjENJFB_frbref.vfhehd_NBU_pfnJGJn</token>
+    <presance type='WATCHING'>I am a bot!</presance>
 </settings>
 <startup> channel='462i4552035622942'embed='true color='#FFFC33'>The bot has successfully booted with ping: {{bot:ping}}ms</startup>
 ```
@@ -55,6 +56,7 @@ Comment: Text ignored by code
     <prefix>The bots prefix (Only one character)</prefix> 
     <owner>The bot owner's User ID</owner>
     <token>The bots Token, or client secret</token>
+    <presance type='"WATCHING", "PLAYING", or "STREAMING" - All Caps.'>Bot's Presance Text, following the attribute in 'type' This tag is optional</presance>
 </settings>
 ```
 
@@ -140,5 +142,5 @@ Comment: Text ignored by code
 #### [Discord](https://discord.gg/DPqH5dW)
 #### Our team:
 ###### Chris J. (DivineOpinion) - <Ownership/> Front-End Development: HTML, CSS, BootStrap, Javascript, Node.js; [Contact](mailto:cjones@smc.wtf)
-###### Hunter P. (RevokedCookie) - <Ownership/> Back-End & API Development: Python, JavaScript, HTML, Node.js; [Contact](mailto:hpaulson@smc.wtf)
+###### Hunter P. (RevokedCookie) - <Ownership/> Back-End & API Development: Python, GO, JavaScript, HTML, Node.js; [Contact](mailto:hpaulson@smc.wtf)
 ###### Chris L. (ITS_N1GH7OWL) - Back-End & API Development: Node.Js, C#, TypeScript, Ruby, C++, C, HTML, CSS, JavaScript, Python [Contact](mailto:clamers@smc.wtf)
