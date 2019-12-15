@@ -63,6 +63,15 @@ client.on('message', async message => {
 })
 
 client.on('ready', () => {
+    
+    let presanceE = $('settings > presance').first()
+    let presanceType;
+    if (!presanceE.text()) console.log(chalk.green.underline('No presance entered!'))
+    if (!presanceE.attr('type')) presanceType = 'PLAYING' 
+    else (presanceType = presanceE.attr('type'))
+    client.user.setActivity(presanceE.text(), {type: `${presanceType}`})
+    
+    
     let startupE = $('startup').first()
     console.log(chalk.green.underline('Discord Markup Language Has Launched Successfully!'))
     try {
