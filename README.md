@@ -27,7 +27,7 @@ Required: [Node.js v10 LTS](https://nodejs.org/en/download/) or Higher
     <prefix>/</prefix>>
     <owner>583295728349462947</owner>
     <token>dehsNbNbhj638e9.hfenf.fnjENJFB_frbref.vfhehd_NBU_pfnJGJn</token>
-    <presance type='WATCHING'>I am a bot!</presance>
+    <presence type='WATCHING'>I am a bot!</presence>
 </settings>
 <startup> channel='462i4552035622942'embed='true color='#FFFC33'>The bot has successfully booted with ping: {{bot:ping}}ms</startup>
 ```
@@ -56,7 +56,7 @@ Comment: Text ignored by code
     <prefix>The bots prefix (Only one character)</prefix> 
     <owner>The bot owner's User ID</owner>
     <token>The bots Token, or client secret</token>
-    <presance type='"WATCHING", "PLAYING", or "STREAMING" - All Caps.'>Bot's Presance Text, following the attribute in 'type' This tag is optional</presance>
+    <presence type='"WATCHING", "PLAYING", or "STREAMING" - All Caps.'>Bot's Presence Text, following the attribute in 'type' This tag is optional</presence>
 </settings>
 ```
 
