@@ -64,12 +64,12 @@ client.on('message', async message => {
 
 client.on('ready', () => {
     
-    let presanceE = $('settings > presance').first()
-    let presanceType;
-    if (!presanceE.text()) console.log(chalk.green.underline('No presance entered!'))
-    if (!presanceE.attr('type')) presanceType = 'PLAYING' 
-    else (presanceType = presanceE.attr('type'))
-    client.user.setActivity(presanceE.text(), {type: `${presanceType}`})
+    let presenceE = $('settings > presence').first()
+    let presenceType;
+    if (!presenceE.text()) console.log(chalk.green.underline('No presence entered!'))
+    if (!presenceE.attr('type')) presenceType = 'PLAYING' 
+    else (presenceType = presenceE.attr('type'))
+    client.user.setActivity(presenceE.text(), {type: `${presenceType}`})
     
     
     let startupE = $('startup').first()
