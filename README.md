@@ -142,5 +142,5 @@ Comment: Text ignored by code
 #### [Discord](https://discord.gg/DPqH5dW)
 #### Our team:
 ###### Chris J. (DivineOpinion) - <Ownership/> Front-End Development: HTML, CSS, BootStrap, Javascript, Node.js; [Contact](mailto:cjones@smc.wtf)
-###### Hunter P. (RevokedCookie) - <Ownership/> Back-End & API Development: Python, GO, JavaScript, HTML, Node.js; [Contact](mailto:hpaulson@smc.wtf)
+###### Hunter P. (C0braD3v) - <Ownership/> Back-End & API Development: Python, GO, JavaScript, HTML, Node.js; [Contact](mailto:hpaulson@smc.wtf)
 ###### Chris L. (ITS_N1GH7OWL) - Back-End & API Development: Node.Js, C#, TypeScript, Ruby, C++, C, HTML, CSS, JavaScript, Python [Contact](mailto:clamers@smc.wtf)
