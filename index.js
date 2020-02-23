@@ -8,8 +8,8 @@ const chalk = require('chalk')
 const _ = require('lodash');
 
 const commands = new Set()
-var botPrefix = null
-var owner = null
+let botPrefix = null
+let owner = null
 
 if (!fs.existsSync('./markup/bot.dml')) {
     fs.createFileSync('./markup/bot.dml')
@@ -41,12 +41,13 @@ client.on('message', async message => {
     if (!commands.has(command)) return
     const $$ = cheerio.load(parser.parse(`./markup/commands/${command}.dml`, client, message))
     const responseE = $$('response');
-    const scripts = $$('script').get()[0].children[0].data
+    if ($$('script').get()[0] != undefined) {
+        const scripts = $$('script').get()[0].children[0].data
     try {
         eval(scripts)
     } catch (error) {
         throw new Error(chalk.red('DML Script Tag Error'))
-    }
+    }}
     if (responseE.length === 0) return console.log(chalk.bgWhite.red('Command Missing <response> element!'))
     if (args.length === 0 || $$('arg').length === 0) return simple.embed('response', $$, responseE, message)
     else {
@@ -62,7 +63,16 @@ client.on('message', async message => {
 })
 
 client.on('ready', () => {
-    var startupE = $('startup').first()
+    
+    let presanceE = $('settings > presance').first()
+    let presanceType;
+    if (!presanceE.text()) console.log(chalk.green.underline('No presance entered!'))
+    if (!presanceE.attr('type')) presanceType = 'PLAYING' 
+    else (presanceType = presanceE.attr('type'))
+    client.user.setActivity(presanceE.text(), {type: `${presanceType}`})
+    
+    
+    let startupE = $('startup').first()
     console.log(chalk.green.underline('Discord Markup Language Has Launched Successfully!'))
     try {
         if (!startupE.attr('channel')) console.log(chalk.yellow.inverse('! No startup channel set in: bot.dml !'))
