@@ -1,0 +1,21 @@
+version: 3
+notifications:
+- when: pull_request.opened
+  comment: |
+    Pull request pending review from an Executive
+- when: pullapprove.approved
+  comment: "Pull request approved by Executive"
+
+groups:
+  code:
+    labels:
+      approved: "approved"
+      pending: "pending"
+      rejected: "rejected"
+    reviewers:
+      teams:
+      - executive
+    reviews:
+      required: 1  
+      request: 1 
+      request_order: given 
