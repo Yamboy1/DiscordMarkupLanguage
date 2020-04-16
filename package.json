@@ -4,7 +4,7 @@
   "description": "A markup language designed to help html/xml developers create a discord bot with ease",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "author": "Retr0n",
   "license": "ISC",
