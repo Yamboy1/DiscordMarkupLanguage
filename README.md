@@ -1,4 +1,4 @@
-
+![Node.js CI](https://github.com/SeismicCore/Retr0n/workflows/Node.js%20CI/badge.svg?branch=master)
 # Discord Markup Language
 **By: SeismicCore**
 
