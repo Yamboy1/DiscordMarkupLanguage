@@ -9,9 +9,9 @@ notifications:
 groups:
   code:
     labels:
-      approved: "approved"
-      pending: "pending"
-      rejected: "rejected"
+      approved: "Approved"
+      pending: "Pending"
+      rejected: "Rejected"
     reviewers:
       teams:
       - executive
