@@ -33,7 +33,7 @@ Required: [Node.js v10 LTS](https://nodejs.org/en/download/) or Higher
 ```
 
 # Documentation
-This is the documentation for the Discord Markup Language. Listed below are examples of all DML's tags. A tag always uses the same syntax: <tag>TEXT</tag>. The begining tag, is the tags name, and the closing tag is the tag's name with a / in front. Tags can also include attributes. An attribute is something defined using a = inside a tag. For example, <tag field='text'>TEXT</tag>. Attributes will always be a string, and will always be in the beginning tag, and never include a space between the attribute, =, and string. DML also offers External API calls, called DML external calls. These are used to call information from the Discord API. External calls are always formatted like this: {{Module:Specific}}, where the Module is what its calling from (A member, author, bot, guild, or message), and the Specific is what its calling from that module. Calls can be used in any text field. 
+This is the documentation for the Discord Markup Language. Listed below are examples of all DML's tags. A tag always uses the same syntax: <tag>TEXT</tag>. The beginning tag, is the tags name, and the closing tag is the tag's name with a / in front. Tags can also include attributes. An attribute is something defined using a = inside a tag. For example, <tag field='text'>TEXT</tag>. Attributes will always be a string, and will always be in the beginning tag, and never include a space between the attribute, =, and string. DML also offers External API calls, called DML external calls. These are used to call information from the Discord API. External calls are always formatted like this: {{Module:Specific}}, where the Module is what its calling from (A member, author, bot, guild, or message), and the Specific is what its calling from that module. Calls can be used in any text field. 
 
 Basic information:
 
@@ -77,10 +77,10 @@ Comment: Text ignored by code
     <embed> <!--This tag is used to make an embedded message-->
         <author>The author field of an embed message</author>
         <description>The description field of an embed message</description>
-        <feild title='the title of an embed field'>The value of an embed field</fields>
+        <fields title='the title of an embed field'>The value of an embed field</fields>
         <color>#hexID</color> <!--This tag is used to set the color of an embed message-->
         <thumbnail>ImageUrl</thumbnail> <!--This tag is used to set the tumbnail of an embed messsage-->
-        <footer timestamp='boolean'<!--If you want your embed's footer to inclue a timestamp--> image='ImageUrl'<!--The footer icon on your embed-->>The footer field of an embed</footer>
+        <footer timestamp='boolean'<!--If you want your embed's footer to include a timestamp--> image='ImageUrl'<!--The footer icon on your embed-->>The footer field of an embed</footer>
     </embed>
 </response>
 ```
@@ -89,7 +89,7 @@ Comment: Text ignored by code
 
 ```html
 <arg value="Text">
-<response>The 'value' of the argument is what you would use to call it. So if the command was ping, and the argumnt value was 1, to call the argument would be `/ping 1`,\nIn an argument, you can use any tags and calls just as you would in the normal command, In this field, you can use things like: <response>, <embed>, <console>, etc.</response>        
+<response>The 'value' of the argument is what you would use to call it. So if the command was ping, and the argument value was 1, to call the argument would be `/ping 1`,\nIn an argument, you can use any tags and calls just as you would in the normal command, In this field, you can use things like: <response>, <embed>, <console>, etc.</response>        
 </arg>                  
 ```
 * DML External Calls - These are used to call information from the Discord API. They can be used in any text field.
@@ -104,8 +104,8 @@ Comment: Text ignored by code
 ```
 * Member Calls
 ```html
-{{memer:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requiers: A <require> tag
-{{member:username}} The Name wihtout the #0000 of the member that was defined in the <require> tag Requiers: A <require> tag
+{{member:tag}} The Name#0000 tag of the member that was defined in the <require> tag Requires: A <require> tag
+{{member:username}} The Name without the #0000 of the member that was defined in the <require> tag Requires: A <require> tag
 {{member:avatar}} The avatar of the member that was defined in the <require> tag. Requires: A <require> tag
 ```
 * Author Calls
@@ -115,11 +115,11 @@ Comment: Text ignored by code
 {{author.id}} Displays the user ID of whoever requested a command.
 {{author:avatar}} The avatar of the command
 {{author:createdOn}} Displays when the command authors discord account was made
-{{author:isBot}} Dislays if the command author is a bot
-{{author:presence:name}} Displays the comand authors current Discord presence name
-{{author:presence:details}} Displays the comand authors current Discord presence details
-{{author:presence:state}} Displays the comand authors current Discord presence details
-{{author:presence:time:start}} Displays the comand authors current Discord presence start time
+{{author:isBot}} Displays if the command author is a bot
+{{author:presence:name}} Displays the command authors current Discord presence name
+{{author:presence:details}} Displays the command authors current Discord presence details
+{{author:presence:state}} Displays the command authors current Discord presence details
+{{author:presence:time:start}} Displays the command authors current Discord presence start time
 ```
 * Guild Calls
 ```html
